@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<body>
+    <table>
+        <thead>
+        <tr>
+            <th> id </th>
+            <th> concepto </th>
+            <th> importe </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="factura : ${lista}">
+            <td th:text="${factura.numero}"> </td>
+            <td th:text="${factura.concepto}"></td>
+            <td th:text="${factura.importe}"></td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
